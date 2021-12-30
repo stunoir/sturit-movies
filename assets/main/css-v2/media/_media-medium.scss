@@ -1,0 +1,52 @@
+﻿/* Medium and up */
+@media screen and (min-width: 40em) {
+
+	.panel-details {
+		max-height: 85vh;
+		overflow-y: scroll;
+		padding-right: 1rem;
+
+		&::-webkit-scrollbar {
+			width: 5px;
+		}
+
+		&::-webkit-scrollbar-track {
+			background: transparent;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background: #888;
+		}
+
+		&::-webkit-scrollbar-thumb:hover {
+			background: #555;
+		}
+	}
+
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+	.panel-movie-info .content {
+		width: 80%;
+	}
+
+}
+
+/* Medium  iphone landscape only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) and (orientation: landscape) {
+}
+
+/* max-width 640px, mobile-only styles and landscape */
+@media only screen and (min-width: 40.063em) and (max-width: 1024px) and (orientation: landscape) {
+}
+
+/* ipad pro */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+
+	.panel-movie-info .content {
+		width: 60%;
+	}
+
+}

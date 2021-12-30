@@ -1,0 +1,5 @@
+**/.DS_Store
+compilerconfig.json
+bundleconfig.json
+compilerconfig.json.defaults
+node_modules/

@@ -1,0 +1,84 @@
+﻿.wrapper-hero {
+	padding: 18rem 0 14rem 0;
+	position: relative;
+	margin-top: -2rem;
+	animation-name: fadeIn;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	overflow: hidden;
+
+	.bg-img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-position: top center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		filter: blur(3px);
+		opacity: 0.2;
+		background-attachment: fixed;
+	}
+
+	.grid-container {
+		position: relative;
+	}
+}
+
+.content-hero {
+	animation-name: fadeInUp;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+
+	h1 {
+		color: #363636;
+		font-weight: 600;
+		font-size: 2rem;
+		margin-bottom: 2.5rem;
+		line-height: 1.1;
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			width: 5px;
+			border-bottom: 4px solid $col-brand-red;
+			left: 210px;
+			bottom: -1rem;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			width: 200px;
+			border-bottom: 4px solid $col-brand-red;
+			left: 0;
+			bottom: -1rem;
+		}
+	}
+
+	.highlite {
+		color: $col-brand-red;
+		font-size: .9rem;
+		margin-bottom: .1rem;
+		text-transform: uppercase;
+	}
+
+	.date {
+		color: #363636;
+		font-size: .9rem;
+		margin-bottom: 1rem;
+	}
+
+	.info {
+		color: #363636;
+		font-weight: 600;
+		font-size: 1rem;
+		margin-bottom: 1rem;
+	}
+}
+
+.container-movies {
+	margin-top: -12rem;
+}

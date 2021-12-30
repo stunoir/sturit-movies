@@ -1,0 +1,96 @@
+﻿
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.fadeIn {
+	animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 2%, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 2%, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.fadeInUp {
+	animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeinLeft {
+	from {
+		opacity: 0;
+		transform: translateX(200%);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes fadeinLeft {
+	from {
+		opacity: 0;
+		transform: translateX(200%);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.fadeinLeft {
+	animation-name: fadeinLeft;
+}
+
+@keyframes heroZoom {
+	0% {
+		transform-origin: top center;
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.1);
+	}
+}

@@ -1,0 +1,57 @@
+﻿/* Small only */
+@media screen and (max-width: 39.9375em) {
+
+	.section-main {
+		padding: 1rem;
+	}
+
+	.card-movie {
+		.img {
+			height: 200px;
+		}
+
+	}
+
+	.panel-details {
+		padding-top: 2rem;
+		max-height: 85vh;
+		overflow-y: scroll;
+	}
+
+	.panel-movie-info {
+		.content {
+			width: 90%;
+			padding: 1.5rem 1rem;
+
+			.movie-title {
+				font-size: 1.2rem;
+			}
+
+			.movie-img {
+				height: 130px;
+			}
+
+			.movie-release {
+				font-size: .8rem;
+			}
+
+			.movie-teaser p, .movie-teaser li {
+				font-size: .8rem;
+			}
+		}
+	}
+
+	.section-results-info .block-pager {
+		margin: 1rem 0;
+		justify-content: flex-start;
+	}
+
+	.content-hero h1 {
+		font-size: 1.6rem;
+	}
+
+}
+
+/*iphone x etc*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+}

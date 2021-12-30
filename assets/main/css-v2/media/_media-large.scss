@@ -1,0 +1,17 @@
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+
+	.pad-left {
+		padding-left: 2rem;
+	}
+
+	.pad-right {
+		padding-right: 2rem;
+	}
+
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+}

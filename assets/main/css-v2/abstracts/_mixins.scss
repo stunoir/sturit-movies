@@ -1,0 +1,59 @@
+﻿/*
+FADER: 
+/////////////////////////////
+.link {
+	@include fader;
+}
+*/
+
+@mixin fader {
+	transition: opacity 0.3s;
+	opacity: 1;
+
+	&:hover, &:focus {
+		opacity: 0.8;
+	}
+}
+
+/*
+INPUT PLACEHOLDER:
+/////////////////////////////
+input,
+textarea {
+	@include input-placeholder {
+		color: #000;
+	}
+}
+*/
+
+@mixin input-placeholder {
+	&.placeholder {
+		@content;
+	}
+	&:-moz-placeholder {
+		@content;
+	}
+	&::-moz-placeholder {
+		@content;
+	}
+	&:-ms-input-placeholder {
+		@content;
+	}
+	&::-webkit-input-placeholder {
+		@content;
+	}
+}
+
+/*
+BG IMAGE HANDLER:
+/////////////////////////////
+.element {
+	@include bg-img(top center, cover)
+}
+*/
+
+@mixin bg-img( $pos: center, $size: cover ) {
+	background-position: $pos;
+	background-repeat: no-repeat;
+	background-size: $size;
+}

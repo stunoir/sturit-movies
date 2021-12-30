@@ -1,0 +1,48 @@
+﻿.skip-to-content-link {
+	background: #363636;
+	color: #fff;
+	font-family: $font-main;
+	line-height: 1;
+	left: 0;
+	top: 0;
+	padding: .5rem .8rem;
+	position: absolute;
+	transform: translateY(-200px);
+
+	&:focus {
+		transform: translateY(0);
+		color: #fff;
+	}
+}
+
+.btn-close {
+	color: #fff;
+	margin-bottom: 1rem;
+	cursor: pointer;
+	font-size: .8rem;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+	@include fader;
+}
+
+
+.btn-main {
+	display: inline-block;
+	background-color: $col-brand-red;
+	cursor: pointer;
+	color: #fff;
+	font-size: .8rem;
+	padding: .66rem 1rem;
+	border-radius: 3px;
+	transition: background-color .3s, color .3s;
+	margin-left: .4rem;
+
+	&:hover, &:focus {
+		color: #fff;
+		background-color: $col-brand-black;
+	}
+
+	&.is-active {
+		color: #fff;
+		background-color: $col-brand-black;
+	}
+}

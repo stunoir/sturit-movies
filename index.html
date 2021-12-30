@@ -1,0 +1,153 @@
+﻿<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Sturit - movie search" />
+	<title>Home | Sturit Movies</title>
+	<link href="assets/main/foundation/css/foundation.min.css" rel="stylesheet">
+	<link href="assets/main/css-v2/main.min.css" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/main/fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/main/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/main/fav/favicon-16x16.png">
+	<link rel="mask-icon" href="assets/main/fav/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="assets/main/fav/favicon.ico">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="assets/main/fav/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+</head>
+
+<body>
+
+	<!--header logo and search-->
+	<header class="wrapper-header">
+
+		<a class="skip-to-content-link" href="#maincontent">Skip to main content</a>
+
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="large-2 medium-4 small-5 align-self-middle cell">
+					<a class="logo" href="/">
+						<img alt="Sturit Movies home" src="assets/main/img/layout/logo.png" />
+					</a>
+				</div>
+				<div class="large-6 medium-4 small-1 text-right cell">
+					<a class="btn-main btn-toprated hide-for-small-only" href="">Top Rated</a>
+				</div>
+				<div class="large-4 medium-4 small-6 cell">
+					<form class="form-search">
+						<label for="txtSearchInput" class="show-for-sr">Search for a movie</label>
+						<input id="txtSearchInput" placeholder="Search here..." type="text" />
+						<button id="cmdSearch" type="submit" class="btn-search">
+							<span class="mmt-icon-search"></span>
+							<span class="show-for-sr">Search</span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+
+	<!--main content-->
+	<main id="maincontent">
+
+		<div class="wrapper-hero">
+			<div id="divHeroImg" class="bg-img"
+				style="background-image: url('https://image.tmdb.org/t/p/w500//dK12GIdhGP6NPGFssK2Fh265jyr.jpg')"></div>
+			<div class="grid-container">
+				<div class="grid-x grid-padding-x">
+					<div class="medium-10 large-8 cell">
+						<div class="content-hero">
+							<p class="highlite">Highlite</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper-list">
+			<div class="grid-container container-movies">
+				<div class="grid-x grid-padding-x">
+					<div class="medium-12 cell">
+						<div class="wrapper-main">
+
+							<!--results and pagination-->
+							<div class="grid-x grid-padding-x section-results-info">
+								<div class="medium-6 align-self-middle cell">
+									<p><span class="results-total"></span> Movies found</p>
+								</div>
+								<div class="medium-6 cell">
+									<div class="block-pager">
+										<p class="results-page-info">Pages 1 of 3</p>
+										<button id="cmdPrev" type="button" class="btn-page">
+											<span class="mmt-icon-back-arrow"></span>
+											<span class="show-for-sr">Previous page</span>
+										</button>
+										<button id="cmdNext" type="button" class="btn-page">
+											<span class="mmt-icon-forward-arrow"></span>
+											<span class="show-for-sr">Next page</span>
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<!--movie cards-->
+							<div class="grid-x grid-padding-x small-up-2 medium-up-3 large-up-5 card-container"></div>
+
+							<!--error block-->
+							<div class="grid-x grid-padding-x section-error">
+								<div class="medium-12 cell">
+									<h2 class="section-title">Oops!!</h2>
+									<p class="section-error-message">An error</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+
+	<!--footer-->
+	<footer class="wrapper-footer">
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="medium-12 text-center cell">
+					<img class="logo" alt="Sturit Movies footer logo" src="assets/main/img/layout/logo.png" />
+					<p>&copy; 2021 Sturit Movies</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!--panel content-->
+	<div class="panel-movie-info">
+		<div class="content">
+			<div class="grid-x grid-padding-x">
+				<div class="medium-12 cell">
+					<button class="btn-close" type="button">
+						<span class="mmt-icon-back-arrow"></span> back
+					</button>
+					<div class="panel-details"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="assets/main/js/app-v2.min.js"></script>
+
+</body>
+
+</html>

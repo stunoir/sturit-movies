@@ -1,0 +1,19 @@
+﻿/* --------------------------------- */
+/* reduced animations */
+/* --------------------------------- */
+@media screen and (prefers-reduced-motion: reduce) {
+
+	* {
+		animation: none !important;
+		animation-duration: 0s !important;
+		animation-delay: 0s !important;
+	}
+
+	.aos-init, .aos-animate {
+		opacity: 1 !important;
+		transform: none !important;
+		transition-duration: 0s !important;
+		transition-delay: 0s !important;
+		transition-property: none !important;
+	}
+}
