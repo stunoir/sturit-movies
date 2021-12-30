@@ -1,87 +1,87 @@
 ﻿.card-movie {
-	display: block;
-	margin-bottom: 2rem;
-	transition: background-color .3s, border .3s, transform .3s, box-shadow .3s;
-	border-radius: 3px;
-	box-shadow: 0 0 10px rgba(#000, .2);
-	background-color: #403954;
+  display: block;
+  margin-bottom: 2rem;
+  transition: background-color 0.3s, border 0.3s, transform 0.3s, box-shadow 0.3s;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(#000, 0.2);
+  background-color: $col-brand-red;
 
-	span {
-		display: block;
-		color: #fff;
-	}
+  span {
+    display: block;
+    color: #fff;
+  }
 
-	.img {
-		background-color: #000;
-		height: 300px;
-		margin-bottom: .8rem;
-		background-position: top center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		transition: box-shadow .3s;
-		position: relative;
-		border-radius: 3px;
+  .img {
+    background-color: #000;
+    height: 300px;
+    margin-bottom: 0.8rem;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: box-shadow 0.3s;
+    position: relative;
+    border-radius: 3px;
 
-		&:after {
-			content: "\e905";
-			font-family: 'mmtico' !important;
-			position: absolute;
-			color: #fff;
-			font-size: 2rem;
-			bottom: 1rem;
-			right: 1rem;
-			text-shadow: 0 1px 5px rgba(#000, 0.4);
-			opacity: 0;
-			transition: opacity .3s;
-			z-index: 10;
-		}
-	}
+    &:after {
+      content: '\e905';
+      font-family: 'mmtico' !important;
+      position: absolute;
+      color: #fff;
+      font-size: 2rem;
+      bottom: 1rem;
+      right: 1rem;
+      text-shadow: 0 1px 5px rgba(#000, 0.4);
+      opacity: 0;
+      transition: opacity 0.3s;
+      z-index: 10;
+    }
+  }
 
-	.info {
-		padding: 0 1rem 1rem 1rem;
-		position: relative;
-		border-bottom: 5px solid $col-brand-red;
+  .info {
+    padding: 0 1rem 1rem 1rem;
+    position: relative;
 
-		&:before {
-			content: '';
-			position: absolute;
-			top: -69px;
-			left: 0;
-			height: 60px;
-			width: 100%;
-			background: #000;
-			background: linear-gradient( 0deg, #403954 0%, rgba(64,57,84,0) 100%);
-		}
+    &:before {
+      content: '';
+      position: absolute;
+      top: -69px;
+      left: 0;
+      height: 60px;
+      width: 100%;
+      background: #000;
+      background: linear-gradient(0deg, $col-brand-red 0%, rgba($col-brand-red, 0) 100%);
+    }
 
-		.title {
-			font-weight: 600;
-			white-space: nowrap;
-			overflow: hidden;
-			text-overflow: ellipsis;
-		}
+    .title {
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
 
-		.year {
-			font-size: .8rem;
-		}
-	}
+    .year {
+      font-size: 0.8rem;
+    }
+  }
 
-	&:hover, &:focus {
-		transform: translateY(-3px); 
-		box-shadow: 0 0 10px rgba(#000, .2);
+  &:hover,
+  &:focus {
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgba(#000, 0.2);
 
-		.img {
-			box-shadow: inset 0px 0px 10px rgba(#000,0.4);
+    .img {
+      box-shadow: inset 0px 0px 10px rgba(#000, 0.4);
 
-			&:after {
-				opacity: 1;
-			}
-		}
-	}
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .card-container {
-	animation-duration: .8s;
-	animation-fill-mode: both;
-	animation-name: fadeInUp;
-	animation-delay: .3s;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+  animation-delay: 0.3s;
 }
