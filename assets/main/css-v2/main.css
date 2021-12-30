@@ -89,13 +89,13 @@ a { color: #fff; }
 
 .wrapper-header .form-search { display: flex; flex-direction: row; border: 1px solid #282828; border-radius: 2px; }
 
-.wrapper-header .form-search input { border: 1px solid transparent; background-color: #fff; box-shadow: none; margin-bottom: 0; color: #fff; font-size: .9rem; transition: background-color .3s; }
+.wrapper-header .form-search input { border: 1px solid transparent; background-color: #fff; box-shadow: none; margin-bottom: 0; color: #fff; font-size: 0.9rem; transition: background-color 0.3s; }
 
 .wrapper-header .form-search input:focus { background-color: #fff; color: #171717; }
 
-.wrapper-header .form-search .btn-search { width: 50px; text-align: center; cursor: pointer; background-color: #fff; transition: background-color .3s; }
+.wrapper-header .form-search .btn-search { width: 50px; text-align: center; cursor: pointer; background-color: #fff; transition: background-color 0.3s; }
 
-.wrapper-header .form-search .btn-search span { color: #282828; transition: color .3s; }
+.wrapper-header .form-search .btn-search span { color: #282828; transition: color 0.3s; }
 
 .wrapper-header .form-search .btn-search:hover, .wrapper-header .form-search .btn-search:focus { background-color: #282828; }
 
@@ -217,9 +217,9 @@ a { color: #fff; }
 
 .content-hero h1:after { content: ''; position: absolute; width: 200px; border-bottom: 4px solid #282828; left: 0; bottom: -1rem; }
 
-.content-hero .highlite { color: #282828; font-size: .9rem; margin-bottom: .1rem; text-transform: uppercase; }
+.content-hero .highlite { color: #282828; font-size: 0.9rem; margin-bottom: 0.1rem; text-transform: uppercase; }
 
-.content-hero .date { color: #363636; font-size: .9rem; margin-bottom: 1rem; }
+.content-hero .date { color: #363636; font-size: 0.9rem; margin-bottom: 1rem; }
 
 .content-hero .info { color: #363636; font-weight: 600; font-size: 1rem; margin-bottom: 1rem; }
 

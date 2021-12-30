@@ -28,7 +28,7 @@
     width: 100%;
 
     .btn-page {
-      border: 2px solid $col-brand-red;
+      border: 2px solid $col-brand-newblack;
       height: 28px;
       width: 28px;
       margin-left: 1rem;
@@ -36,14 +36,14 @@
       transition: background-color 0.3s;
 
       span {
-        color: $col-brand-red;
+        color: $col-brand-newblack;
         font-size: 0.9rem;
         transition: color 0.3s;
       }
 
       &:hover,
       &:focus {
-        background-color: $col-brand-red;
+        background-color: $col-brand-newblack;
 
         span {
           color: #fff;
