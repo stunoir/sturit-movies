@@ -1,92 +1,94 @@
 ﻿.wrapper-main {
-	margin-bottom: 4rem;
-	animation-name: fadeIn;
-	animation-duration: 1s;
-	animation-fill-mode: both;
-	border-radius: 4px;
+  margin-bottom: 1rem;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  border-radius: 4px;
 }
 
 .section-error {
-	display: none;
+  display: none;
 }
 
 .section-results-info {
-	margin-bottom: 2rem;
+  margin-bottom: 2rem;
 
-	p {
-		color: #363636;
-		font-size: .9rem;
-		font-weight: 600;
-		margin-bottom: 0;
-	}
+  p {
+    color: #363636;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
 
-	.block-pager {
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-end;
-		align-items: center;
-		width: 100%;
+  .block-pager {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
 
-		.btn-page {
-			border: 2px solid $col-brand-red;
-			height: 28px;
-			width: 28px;
-			margin-left: 1rem;
-			cursor: pointer;
-			transition: background-color .3s;
+    .btn-page {
+      border: 2px solid $col-brand-red;
+      height: 28px;
+      width: 28px;
+      margin-left: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
 
-			span {
-				color: $col-brand-red;
-				font-size: .9rem;
-				transition: color .3s;
-			}
+      span {
+        color: $col-brand-red;
+        font-size: 0.9rem;
+        transition: color 0.3s;
+      }
 
-			&:hover, &:focus {
-				background-color: $col-brand-red;
+      &:hover,
+      &:focus {
+        background-color: $col-brand-red;
 
-				span {
-					color: #fff;
-				}
-			}
+        span {
+          color: #fff;
+        }
+      }
 
-			&.is-inactive {
-				border: 1px solid rgba(#000, .2);
-				cursor: not-allowed;
+      &.is-inactive {
+        border: 1px solid rgba(#000, 0.2);
+        cursor: not-allowed;
 
-				span {
-					color: rgba(#000, .2);
-				}
+        span {
+          color: rgba(#000, 0.2);
+        }
 
-				&:hover, &:focus {
-					border: 1px solid rgba(#000, .2);
-					background-color: transparent;
+        &:hover,
+        &:focus {
+          border: 1px solid rgba(#000, 0.2);
+          background-color: transparent;
 
-					span {
-						color: rgba(#000, .2);
-					}
-				}
-			}
-		}
-	}
+          span {
+            color: rgba(#000, 0.2);
+          }
+        }
+      }
+    }
+  }
 }
 
 .wrapper-list {
-	position: relative;
+  position: relative;
 
-	&:after {
-		content: '';
-		position: absolute;
-		top: -100px;
-		left: 0;
-		height: 300px;
-		width: 100%;
-		background: #fff;
-		background: linear-gradient( 180deg, rgba(#fff,0) 0%, #fff 100%);
-		z-index: 0;
-	}
+  &:after {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 0;
+    height: 300px;
+    width: 100%;
+    background: #fff;
+    background: linear-gradient(180deg, rgba(#fff, 0) 0%, #fff 100%);
+    z-index: 0;
+  }
 
-	.container-movies {
-		position: relative;
-		z-index: 1;
-	}
+  .container-movies {
+    position: relative;
+    z-index: 1;
+  }
 }

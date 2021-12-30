@@ -107,19 +107,19 @@ a { color: #fff; }
 
 .wrapper-footer p { color: #363636; font-size: .9rem; }
 
-.wrapper-main { margin-bottom: 4rem; animation-name: fadeIn; animation-duration: 1s; animation-fill-mode: both; border-radius: 4px; }
+.wrapper-main { margin-bottom: 1rem; animation-name: fadeIn; animation-duration: 1s; animation-fill-mode: both; border-radius: 4px; }
 
 .section-error { display: none; }
 
 .section-results-info { margin-bottom: 2rem; }
 
-.section-results-info p { color: #363636; font-size: .9rem; font-weight: 600; margin-bottom: 0; }
+.section-results-info p { color: #363636; font-size: 0.9rem; font-weight: 600; margin-bottom: 0; }
 
 .section-results-info .block-pager { display: flex; flex-direction: row; justify-content: flex-end; align-items: center; width: 100%; }
 
-.section-results-info .block-pager .btn-page { border: 2px solid #282828; height: 28px; width: 28px; margin-left: 1rem; cursor: pointer; transition: background-color .3s; }
+.section-results-info .block-pager .btn-page { border: 2px solid #282828; height: 28px; width: 28px; margin-left: 1rem; cursor: pointer; transition: background-color 0.3s; }
 
-.section-results-info .block-pager .btn-page span { color: #282828; font-size: .9rem; transition: color .3s; }
+.section-results-info .block-pager .btn-page span { color: #282828; font-size: 0.9rem; transition: color 0.3s; }
 
 .section-results-info .block-pager .btn-page:hover, .section-results-info .block-pager .btn-page:focus { background-color: #282828; }
 
